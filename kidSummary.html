@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+
+    <title>Rolls Royce Technical Service</title>
+
+    <!-- Path to Framework7 iOS CSS theme styles-->
+    <link rel="stylesheet" href="lib/Framework7-1.5.0/dist/css/framework7.material.css">
+    <!-- Path to Framework7 iOS related color styles -->
+    <link rel="stylesheet" href="lib/Framework7-1.5.0/dist/css/framework7.material.colors.css">
+
+    <!-- Path to your custom app styles-->
+    <!--        <link rel="stylesheet" href="../CSS/style.css"/>-->
+
+    <!-- embed jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- embed font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--Path to own CSS SHEET-->
+    <link rel="stylesheet" href="css/style-own.css">
+    <link rel="stylesheet" href="css/circle.css">
+    
+        <!--Framework 7 icons-->
+    <link rel="stylesheet" href="lib/Framework7-Icons-master/css/framework7-icons.css">
+    
+    <!-- Material IO icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            
+    
+    <!--Bootstrap script for the progressbar-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+
+</head>
+
+<!-- X when the body has loaded -->
+<!--<body onload="X()">-->
+
+<body>
+
+    <!--THIS IS THE STATUSBAR-->
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+    <div class="views">
+        <div class="view view-main">
+            <div class="pages">
+                <div data-page="kidSummary" class="page" style="background: #f5f6f7;">
+                    <div class="">
+                        <div class="whiteBg">
+                            <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="left">
+                                <a href="" class="link icon-only no-animation">
+                                    <img src="" width="0" alt="" class="">
+                                </a>
+                            </div>
+                            <div style="margin-left: 0px;font-size: 24px" class="center">Pool Heroes</div>
+                            <div class="right">
+                                <a href="#" class="link icon-only" onclick="createPopover()" style="color: #0D47A1">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="videoBar"></div>
+                        <div class="navCaption"></div>
+                    </div>
+                 
+                    <div class="page-content">
+                         <div id="card-list">
+                        <!--OBLIGATORY COURSE-->
+                        <!--<div style="font-size:20px; padding: 20px;">Welcome Adam</div>-->
+                            
+                    
+                        <a href="engine_2.html" class="link">
+                            <div class="card demo-card-header-pic blueCard shadow--2dp" style="padding-bottom: 10px">
+                                <div style="display: flex; justify-content: center">
+                                    <div class="kidBigPhoto shadow--2dp"><img src="Images/Sarah.jpeg"></div>
+                                </div>
+                                 <div style="display: flex; justify-content: center">
+                                    <div style="font-size: 24px;">Sarah, 5</div>
+                                </div>
+                              
+                                <div class="list-block" style="margin-top: 12px;">
+                                    <ul id="">
+                                        <li class=" infoLi">
+                                            <div class="swipeout-content">
+                                                <a href="kidSummary.html" class="item-content item-link">
+                                                    <div class="item-inner" style="background: none; padding-right: 16px">
+                                                        <div class="statusCircle wStatus shadow--2dp">
+                                                                <img src="Images/raindropCut.png">
+                                                                <i class="fa fa-check-circle"></i>
+                                                            </div>
+                                                        
+                                                        <div class="statusInfo"><div class="sDesc">Dry</div>Sarah is not in water</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                               
+                                        </li>
+                                        
+                                        <li class=" infoLi">
+                                            <div class="swipeout-content">
+                                                <a href="kidSummary.html" class="item-content item-link">
+                                                    <div class="item-inner" style="background: none; padding-right: 16px">
+                                                        <div class="statusCircle wStatus shadow--2dp">
+                                                                <img src="Images/cardiogram.png">
+                                                                <i class="fa fa-check-circle"></i>
+                                                            </div>
+                                                        <div class="statusInfo"><div class="sDesc">90<span style="font-size:14px"> bpm</span></div>Normal heart rate</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                              
+                                        </li>
+                                        
+                                        <li class="infoLi">
+                                            <div class="swipeout-content">
+                                                <a href="kidSummary.html" class="item-content item-link">
+                                                    <div class="item-inner" style="background: none; padding-right: 16px">
+                                                        <div class="statusCircle oStatus shadow--2dp">
+                                                                <img src="Images/oxygen-symbol.png">
+                                                                <i class="fa fa-check-circle"></i>
+                                                            </div>
+                                                        <div class="statusInfo"><div class="sDesc">94<span style="font-size:14px"> %</span></div>Normal oxygen levels</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                             
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                
+                                <div class="buttonRow">
+                                    <button class="col button button-raised">Device</button>
+                                    <button class="col button button-raised">History</button>
+                                    <button class="col button button-raised button-fill color-red" onclick="javascript:mainView.router.loadPage('emergency.html')">Emergency</button>
+                                </div>
+                                
+                       
+                               
+                            </div>
+                        </a>
+                            
+                            
+                            </div>
+                       </div>
+
+
+                        </div>
+                    </div>
+                
+    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+     <!-- Filter -->
+  <div class="picker-modal picker-1" style="background-color:white">
+    <div class="toolbar" style="background-color: #343048">
+      <div class="toolbar-inner">
+        <div class="left"><span>Filter</span></div>
+          <a href="#" class="button button-fill color-teal" onclick="resetFilter('#filterForm')">Reset</a>
+        <div class="right">
+            <a href="#" class="close-picker button button-raised button-fill color-indigo" onclick="listListElement(filterList(currentDegree),myApp.formToData('#sortForm').myradio)">Done</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+<div class="list-block">
+    <form id="filterForm">
+  <ul>
+    <!-- Text inputs -->
+      
+            <li>
+                
+        <div class="position">
+        <label class="label-checkbox item-content" style="padding:0px">
+        <div class="item-inner">
+          <div class="item-title">View Favorites:</div>
+        </div>
+        <input type="checkbox" name="viewFavorites" value="yes">
+        <div class="item-media">
+          <i class="icon icon-form-checkbox"></i>
+        </div>
+      </label></div>
+                
+              
+                
+
+
+    <!-- Select -->
+    <li>
+      <div class="item-content">
+        <div class="item-inner" >
+          <div class="item-title label">Language</div>
+          <div class="item-input button button-raised button-fill color-cyan">
+            <select name="Language" class="button button-raised button-fill color-cyan">
+              <option value="all" selected>All</option>
+              <option value="gb">English</option>
+              <option value="de">German</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </li>
+      
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">ECTS</div>
+          <div class="item-input button button-raised button-fill color-cyan">
+            <select name="limit" class="button button-raised button-fill color-cyan">
+              <option value="greater" selected>Greater than</option>
+              <option value="equal">Equal to</option>
+            </select>
+          </div>
+          <div class="item-input button button-raised button-fill color-cyan">
+            <select name="ECTS" class="button button-raised button-fill color-cyan">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+          </div>
+        </div>
+    </li>
+      
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">Rating</div>
+            <div class="label">Greater than</div>
+          <div class="item-input button button-raised button-fill color-cyan">
+            <select name="Rating" class="button button-raised button-fill color-cyan">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </li>
+ 
+  </ul>
+        </form>
+</div>
+    </div>
+  </div>
+    
+    <!-- Sort -->
+  <div class="picker-modal picker-2" style="background-color:white">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="left"><span>Sort</span></div>
+          <a href="#" class="button button-fill color-teal" onclick="resetFilter('#sortForm')">Reset</a>
+        <div class="right">            <a href="#" class="close-picker button button-raised button-fill color-indigo" onclick="listListElement(filterList(currentDegree),myApp.formToData('#sortForm').myradio)">Done</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+        <div class="list-block">
+<form id="sortForm">
+  <ul>
+    <!-- Single radio input -->
+    <li>
+      <label class="label-radio item-content">
+        <!-- Checked by default -->
+        <input type="radio" name="myradio" value="Alphabetical" checked="checked">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Alphabetical</div>
+        </div>
+      </label>
+    </li>
+    <!-- Another radio input -->
+    <li>
+      <label class="label-radio item-content">
+        <input type="radio" name="myradio" value="ECTS">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Date</div>
+        </div>
+      </label>
+    </li>
+      
+    <li>
+      <label class="label-radio item-content">
+        <!-- Checked by default -->
+        <input type="radio" name="myradio" value="Language">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Pending Tasks</div>
+        </div>
+      </label>
+    </li>
+  </ul>
+    </form>
+</div>   
+    </div>
+  </div>
+     
+</body>
+    
+    <!--Our javascript script-->
+    <script type="text/javascript" src="lib/Framework7-1.5.0/dist/js/framework7.min.js"></script>
+    <script src="js/courses.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/script-own-emmanuel.js"></script>
+    <script src="js/maint.js"></script>
+</body>
+
+</html>

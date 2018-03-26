@@ -1,0 +1,163 @@
+<!-- #4 #one #page: merge channels.html into new div (1) -->
+<div id="channels" class="shadow--16dp"><!-- #9 #shdw #elv: channels view goes 16dp high, like a nav drawer -->
+
+    <!-- APP BAR #1 for APP TITLE -->
+    <h1 id="left-app-bar" class="shadow--4dp"><!-- #9 #shdw #elv: app bar goes 4dp high -->
+        <img src="img/moocus.png" alt="Moocus, the goose!" style="height: 56px;">
+        chatter|app
+    </h1>
+
+    <!-- CHANNELS. #4 #sweat #channels by id -->
+    <ul>
+        <!-- #8 #remove all #channels
+        <li onclick="switchChannel(yummy)">
+            #Yummy
+            <span class="channel-meta">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-chevron-right"></i>
+            </span>
+        </li>
+        <li class="selected" onclick="switchChannel(sevencontinents)">
+            #SevenContinents
+            <span class="channel-meta">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-chevron-right"></i>
+            </span>
+        </li>
+        <li onclick="switchChannel(killerapp)">
+            #KillerApp<span class="channel-meta">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-chevron-right"></i>
+            </span>
+        </li>
+        <li onclick="switchChannel(firstpersononmars)">
+            #FirstPersonOnMars
+            <span class="channel-meta">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-chevron-right"></i>
+            </span>
+        </li>
+        <li onclick="switchChannel(octoberfest)">
+            #Octoberfest
+            <span class="channel-meta">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-chevron-right"></i>
+            </span>
+        </li>
+    -->
+    </ul>
+
+    <!-- #9 #flt #btn: FLOATING ACTION BUTTON -->
+    <button id="add-channel" class="accent shadow--6dp"><i class="fa fa-plus"></i></button>
+
+    <!-- TAB BAR #4 #sweat #tab-bar -->
+    <div id="tab-bar" class="shadow--4dp"><!-- #9 #shdw #elv: tab bar goes 4dp high -->
+        <!-- #4 the first selected #tab-bar button is #highlight due to the class-->
+        <!-- #6 #taptab buttons are getting ids with #hyphens and a #change listener calling selectTab.
+             Pass the #argument to select Tab -->
+        <button class="selected" id="tab-new" onclick="selectTab('#tab-new')">
+            <!-- #7 #icns #tab replacing icons -->
+            <i class="fa fa-lightbulb-o"></i>
+            New
+        </button>
+        <button id="tab-trending" onclick="selectTab('#tab-trending')">
+            <!-- #7 #icns #tab replacing icons -->
+            <i class="fa fa-fire"></i>
+            Trending
+        </button>
+        <button id="tab-favorites" onclick="selectTab('#tab-favorites')">
+            <!-- #7 #icns #tab replacing icons -->
+            <i class="fa fa-star"></i>
+            Favorites
+        </button>
+    </div>
+</div>
+
+<!-- #4 #one #page: merge chat.html into new div (2) -->
+<div id="chat">
+
+    <!-- APP BAR #2 for CHANNEL TITLE-->
+    <h1 class="shadow--4dp"><!-- #9 #shdw #elv: app bar goes 4dp high -->
+        <!-- #4 #page remove #hyperlink and chevron -->
+        <!-- #6 #channels #switcher needs to identify the channel name, so let's give it an ID -->
+        <span id="channel-name">#SevenContinents</span>
+        <!-- #6 #channels #location also needs an id -->
+        <small id="channel-location">by <strong>cheeses.yard.applies</strong></small>
+        <!-- #6 #liking channels requires a #filled star / with its #click listener -->
+        <!-- #7 #icns #str: star is now font-awesome -->
+        <!-- #btns-str: a new primary button now contains the icon -->
+        <button id="channel-star" class="primary" onclick="star()">
+            <i class="fa fa-star"></i>
+        </button>
+    </h1>
+
+    <!-- #5 #messages are now wrapped in a div to #scroll properly */ -->
+    <div id="messages">
+
+        <!-- #4 #messages now with an identifying #class -->
+        <div class="message own"> <!-- #4 to right- #align #messages, they need an additional 'own' class -->
+            <h3><a href="http://w3w.co/cheeses.yard.applies" target="_blank"><strong>cheeses.yard.applies</strong></a>
+                Wed, June 20th, 13:37 <em>15 min. left</em></h3>
+            <p>What's the place you folks call home?</p>
+            <button class="accent">+5 min.</button> <!-- #9 buttons are now accent #btns #acc-->
+        </div>
+
+        <!-- #4 #messages now with an identifying #class -->
+        <div class="message">
+            <h3><a href="http://w3w.co/truck.cotton.zone" target="_blank"><strong>truck.cotton.zone</strong></a>
+                Wed, June 20th, 13:39 <em>4 min. left</em></h3>
+            <p>BRISBANE! Hang loose!</p>
+            <button class="accent">+5 min.</button> <!-- #9 buttons are now accent #btns #acc-->
+        </div>
+
+        <!-- #4 #messages now with an identifying #class -->
+        <div class="message">
+            <h3><a href="http://w3w.co/thus.best.dishes" target="_blank"><strong>thus.best.dishes</strong></a>
+                Wed, June 20th, 14:02 <em>12 min. left</em></h3>
+            <p>The big apple.</p>
+            <button class="accent">+5 min.</button> <!-- #9 buttons are now accent #btns #acc-->
+        </div>
+
+        <!-- #4 #messages now with an identifying #class -->
+        <div class="message">
+            <h3><a href="http://w3w.co/driveway.helper.magazine"
+                   target="_blank"><strong>driveway.helper.magazine</strong></a>
+                Wed, June 20th, 14:02 <em>7 min. left</em></h3>
+            <p>Eu sou um Cariocas.</p>
+            <button class="accent">+5 min.</button> <!-- #9 buttons are now accent #btns #acc-->
+        </div>
+
+        <!-- #4 #messages now with an identifying #class -->
+        <div class="message">
+            <h3><a href="http://w3w.co/escapes.pitch.saucepan"
+                   target="_blank"><strong>escapes.pitch.saucepan</strong></a>
+                Wed, June 20th, 14:07 <em>14 min. left</em></h3>
+            <p>Greetings from the western cape!</p>
+            <button class="accent">+5 min.</button> <!-- #9 buttons are now accent #btns #acc-->
+        </div>
+
+        <!-- #4 #messages now with an identifying #class -->
+        <div class="message">
+            <h3><a href="http://w3w.co/meanings.identity.pays"
+                   target="_blank"><strong>meanings.identity.pays</strong></a>
+                Wed, June 20th, 04:08 <em>15 min. left</em></h3>
+            <p>北京</p>
+            <button class="accent">+5 min.</button> <!-- #9 buttons are now accent #btns #acc-->
+        </div>
+
+    </div>
+
+    <!-- #5 #smileys #insert the chat-bar -->
+    <div id="chat-bar" class="shadow--4dp"><!-- #9 #shdw #elv: app bar goes 4dp high -->
+        <button id="emojis-button" class="primary" onclick="toggleEmojis()"> <!-- #9 #btns #sml now primary -->
+            <!-- #7 #icns #smile replacing icons -->
+            <i class="fa fa-smile-o"></i>
+        </button>
+        <div id="emojis" class="shadow--8dp">&#x1F601; &#x1F602; &#x1F603; &#x1F604; &#x1F605; &#x1F606; &#x1F607;</div><!-- #9 #shdw #elv: menu goes 8dp high -->
+        <!-- #8 create a new #input #element which accepts text and has a #prefill as well as a character #imit.
+       For #real, it also gets an id -->
+        <input type="text" placeholder="Message..." maxlength="140" id="message">
+        <!-- #8 #message #send requires a button -->
+        <button onclick="sendMessage()"><i class="fa fa-arrow-right"></i></button> <!-- #9 #btns #snd now accented -->
+    </div>
+</div>

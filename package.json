@@ -1,0 +1,26 @@
+{
+  "name": "ui-f7",
+  "version": "1.0.0",
+  "description": "Technician UI",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server . -p 5002"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmlonga/ui-f7.git"
+  },
+  "author": "EmmLonga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmlonga/ui-f7/issues"
+  },
+  "homepage": "https://github.com/emmlonga/ui-f7#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

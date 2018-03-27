@@ -55,17 +55,20 @@
     <div class="views">
         <div class="view view-main">
             <div class="pages">
-                <div data-page="emergency" class="page" style="background: #f5f6f7;">
+                <div data-page="emergency" class="page" style="background-image: url(Images/pool-heroes-bg2.png)">
                     <div class="">
                         <div class="whiteBg">
-                            <div class="navbar">
+                            <div class="navbar" style="background-color: transparent">
                         <div class="navbar-inner">
                             <div class="left">
                                 <a href="" class="link icon-only no-animation">
-                                    <img src="" width="0" alt="" class="">
+                                    <img src="Images/Pool-Heroes-Icon-Logo.png" width="55" alt="" class="">
                                 </a>
                             </div>
-                            <div style="margin-left: 0px;font-size: 24px" class="center">Pool Heroes</div>
+                            <div style="margin-left: 0px;font-size: 24px; padding: 0px;" class="center">
+                                <a href="" class="link icon-only no-animation" style="padding: 0px">
+                                    <img src="Images/pool-heroes-text.png" height="35" alt="" class="">
+                                </a></div>
                             <div class="right">
                                 <a href="#" class="link icon-only" onclick="createPopover()" style="color: #0D47A1">
                                     <i class="fa fa-ellipsis-v"></i>
@@ -77,16 +80,16 @@
                         <div class="navCaption"></div>
                     </div>
                  
-                    <div class="page-content">
+                    <div class="page-content" style="background-color: transparent; margin-top: 10px;">
                          <div id="card-list">
                         <!--OBLIGATORY COURSE-->
                         <!--<div style="font-size:20px; padding: 20px;">Welcome Adam</div>-->
                             
                     
                         <a href="engine_2.html" class="link">
-                            <div class="card demo-card-header-pic redCard shadow--2dp" style="padding-bottom: 10px">
+                            <div class="card demo-card-header-pic redCard shadow--2dp" style="padding-bottom: 5px">
                                 <div style="display: flex; justify-content: center">
-                                    <div class="emerTitle">Emergency Alert</div>
+                                    <div class="emerTitle">Emergency Alert: <span id="emCause">Drowning</span></div>
                                 </div>
                                  <div style="display: flex; justify-content: center; margin: 10px 0px;">
                                      <div class="kidPhoto shadow--2dp"><img src="Images/Sarah.jpeg"></div>
@@ -95,28 +98,28 @@
                               
                                 <div class="list-block" style="margin-top: 12px;">
                                     <ul class="emIcons">
-                                        <li class=" infoLi">
-                                           <div class="emCircle wStatus shadow--2dp">
-                                                                <img src="Images/raindrop.png">
-                                                                <i class="fa fa-exclamation-circle"></i>
+                                        <li class="infoBox shadow--2dp okBox iW" id="iW">
+                                           <div class="inCircle wStatus shadow--2dp">
+                                                                <img src="Images/raindropCut.png">
+                                                                <i class="fa fa-check-circle ok"></i>
                                             </div>
-                                            <div class="emInfo">Wet</div>      
+                                            <div class="emInfo">Dry</div>      
                                         </li>
                                         
-                                        <li class=" infoLi">
-                                           <div class="emCircle wStatus shadow--2dp">
+                                        <li class=" infoBox shadow--2dp okBox iH" id="iH">
+                                           <div class="inCircle hStatus shadow--2dp">
                                                                 <img src="Images/cardiogram.png">
-                                                                <i class="fa fa-exclamation-circle"></i>
+                                                                <i class="fa fa-check-circle ok"></i>
                                             </div>
-                                            <div class="emInfo">Low BPM</div>      
+                                            <div class="emInfo">90<span style="font-size:14px"> bpm</span></div>      
                                         </li>
                                         
-                                        <li class=" infoLi">
-                                           <div class="emCircle oStatus shadow--2dp">
+                                        <li class=" infoBox shadow--2dp okBox iO" id="iO">
+                                           <div class="inCircle oStatus shadow--2dp">
                                                                 <img src="Images/oxygen-symbol.png">
-                                                                <i class="fa fa-exclamation-circle"></i>
+                                                                <i class="fa fa-check-circle ok"></i>
                                             </div>
-                                            <div class="emInfo">Low Oxygen</div>      
+                                            <div class="emInfo">94<span style="font-size:14px"> %</span></div>      
                                         </li>
                                         
                                     </ul>
@@ -130,7 +133,7 @@
             <li><a href="#" class="item-link smart-select" data-open-in="picker" data-picker-height="400px" style="width:50%">
         </a>
                 
-        <div class="position">
+        <div class="position" style="margin-bottom: 0px">
         <label class="label-checkbox item-content" style="padding:0px">
              <input type="checkbox" name="viewFavorites" value="yes">
         <div class="item-media">
@@ -144,7 +147,7 @@
                 
               <li>
                 
-        <div class="position">
+        <div class="position" style="margin-top: 0px">
         <label class="label-checkbox item-content" style="padding:0px">
             <input type="checkbox" name="hideAttended" value="yes">
         <div class="item-media">
@@ -174,12 +177,16 @@
   </ul>
         </form>
             
-               <div class="buttonEm">
-                                    <button class="col button button-raised">Cancel</button>
-                                    <button class="col button button-raised">30 sec</button>
+               <div class="buttonEm" style="margin-bottom: 0px;">
+                                    <button class="col button button-raised" onclick="javascript:mainView.router.back()">Cancel</button>
                                     <button class="col button button-raised  button-fill color-green">Confirm</button>
-
                                 </div>
+            <div class="buttonEm2" style="color: black; margin-top: 0px">
+                <button class="col button button-raised" >Auto: <span id="countDown">60</span> sec</button> 
+                <button class="col button button-raised" id="countButton">+30sec</button>
+                <button class="col button button-raised" id="pauseButton">Pause</button>
+
+            </div>
 </div>
     
                                 

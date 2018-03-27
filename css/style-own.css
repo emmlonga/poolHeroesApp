@@ -33,7 +33,6 @@
     position: relative;
     bottom:9px;
     left: 15px;
-    color: #4CAF50;
 }
 
 .oStatus img{
@@ -54,8 +53,10 @@
 
 /*Kid Summary*/
 .infoLi{
-    margin: 10px 0px;
+    margin: 0px 0px;
 }
+
+
 .statusInfo{
     margin-top: 5px;
     position: absolute;
@@ -72,7 +73,7 @@
     height: 110px;
     width: 110px;
     border-radius: 50%;
-    margin-top: 24px;
+    margin-top: 18px;
     margin-bottom: 4px;
 }
 
@@ -85,13 +86,63 @@
 .buttonRow{
     display: flex;
     flex-direction: column;
-    margin: 12px 20px;
-    margin-top: 24px;
+    margin: 10px 20px 0px 20px;
 }
 
 .buttonRow button{
     margin: 5px 0px;
     height: 40px;
+}
+
+/*Kid summary2*/
+
+.infoBox {
+    width: 87.5px;
+    height: 87.5px;
+    border-radius: 10px;
+}
+
+.inCircle{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px auto 3px auto;
+}
+
+
+.inCircle img{
+    position: relative;
+    top: 5px;
+    height: 75%;
+    width: 75%;
+}
+
+.inCircle i {
+    font-size: 22px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    bottom:12px;
+    left: 15px;
+}
+
+.ok {
+    color: #4CAF50;
+}
+
+.excl {
+    color: black;
+}
+
+.exclBox {
+    background: #EF5350;
+    color: white;
+}
+
+.okBox {
+    background: white;
+    color: black;
 }
 
 /*Emergency*/
@@ -101,8 +152,8 @@
 }
 
 .emerTitle {
-    margin-top: 24px;
-    font-size: 30px;
+    margin-top: 20px;
+    font-size: 20px;
     color: white;
 }
 .emerTitle img {
@@ -119,7 +170,6 @@
 }
 
 .emInfo{
-    color: white;
 }
 
 .emCircle img{
@@ -139,6 +189,8 @@
     color: black;
 }
 
+
+
 .emIcons {
     display: flex; flex-direction: row;
     justify-content: space-around;
@@ -157,7 +209,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 18px 20px;
+    margin: 12px 20px 8px 20px;
     margin-bottom: 30px;
 }
 
@@ -165,8 +217,29 @@
     margin: 5px 0px;
     height: 40px;
     margin-bottom: 20px;
+        width: 48%;
 }
 
+.buttonEm2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 8px 20px;
+}
+
+.buttonEm2 button{
+    margin: 5px 0px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.list-block .item-inner:after {
+    background-color: transparent;
+}
+
+.list-block ul:after {
+    background-color: transparent;
+}
 /*Technician*/
 
 .active {
@@ -345,9 +418,6 @@
 }
 
 
-.whiteBg{
-    background-color: white;
-}
 
 /*.whiteBg{
     background-color: white;
@@ -528,7 +598,7 @@
 
     //**OLD**//
 .page {
- background: #f5f6f7;
+ background-image: url(../Images/pool-heroes-bg2.png);
 }
 
 .navCenter{
@@ -616,11 +686,11 @@ span.item-text {
 
 .position {
     color: rgb(33, 33, 33);
-    margin: 12px 24px;
+    margin: 6px 24px;
     height: 100%;
     top: 0px;
     left: 50%;
-    width: 100%;
+    width: 98%;
     display: flex;
 }
 
